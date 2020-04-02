@@ -1,0 +1,187 @@
+{
+	"info": {
+		"_postman_id": "d0741a60-6d35-4991-8ac6-31bd78573baf",
+		"name": "cab book",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "register rider",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "mobile",
+							"value": "3434343434",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "rider1@yopmail.com",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "rider1",
+							"type": "text"
+						},
+						{
+							"key": "address",
+							"value": "noida",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8000/rider/register/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"rider",
+						"register",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "register driver",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "mobile",
+							"value": "666666661",
+							"type": "text"
+						},
+						{
+							"key": "vehicle_number",
+							"value": "dl2can3333",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "driver3",
+							"type": "text"
+						},
+						{
+							"key": "address",
+							"value": "Delhi",
+							"type": "text"
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/driver/register/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"driver",
+						"register",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "location update",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "driver_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "x",
+							"value": "20",
+							"type": "text"
+						},
+						{
+							"key": "y",
+							"value": "10",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8000/cab/location/update/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"cab",
+						"location",
+						"update",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "book cab",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "rider_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "x",
+							"value": "10",
+							"type": "text"
+						},
+						{
+							"key": "y",
+							"value": "20",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8000/rider/cab/book/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"rider",
+						"cab",
+						"book",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
