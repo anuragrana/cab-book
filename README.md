@@ -4,6 +4,9 @@
 ### Problem Statement
 We want to build a cab booking platform to allow a rider to book a cab.
 
+### Time available
+90 minutes
+
 ### Details:
 1. The location is represented as a (x, y) coordinate.  
 2. Distance between two points (x1, y1) and(x2, y2) is sqrt((x1-x2)^2 + (y1-y2)^2)  
